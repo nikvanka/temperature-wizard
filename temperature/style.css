@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 48.3% 48%, rgba(88,214,247,1) 0%, rgb(167, 74, 161) 44.6%, rgba(204,92,244,1) 81.9% );
+    background-position: center center;
+}
+
+.container{
+    max-width: 490px;
+    background-color:radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(255, 0, 0) 90.2%);
+    padding: 60px;
+    border-radius: 80px;
+    font-family: sans-serif;
+    box-shadow:#060608 ;
+
+    /* glass effect */
+    background-color: rgb(15, 15, 15);
+    backdrop-filter: blur(5px);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+h1{
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    color:#cca7ef;
+    top: 10%;
+}
+
+#celcius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 60%;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 20px 15px;
+    color: 2D033B;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: button-bevel;
+  margin: 0px;
+}
+
+.icon{
+    flex: 1;
+    height: 50px;
+    background-color:#93a1fa;
+    text-align: center;
+    padding: 0 5px;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 0 8px 8px 0;
+    transition: 0.3s;
+}
+
+.icon:hover{
+    background-color:#ff0000;
+}
+
+.btn{
+    margin-top: 20px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.btn button{
+    border: rgb(238, 6, 6)1, 27);
+    outline: #822626;
+    padding: 8px 40px;
+    border-radius: 5px;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.btn img{
+    transition: 0.5s;
+    align-items: center;
+}
+
+.btn img:hover{
+    transform: scale(0.5);
+}
